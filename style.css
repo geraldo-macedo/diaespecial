@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Gafata&family=Nunito:wght@700&display=swap');
+
+* { box-sizing: border-box; }
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+img { max-width: 100%; }
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fcfaed;
+}
+
+header { height: 180px; }
+
+a { text-decoration: none;
+    text-transform: uppercase;
+    color: #e67365;
+    font-weight: bold;
+} 
+
+h1 {
+    background-color: #F7D9C5;    
+}
+
+h1 img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0px auto;    
+}
+
+nav {
+    background-color: #F7D9C5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {    
+    font-size: 14px;
+    color: #e67365;
+    padding: 10px;
+    transition: 500ms;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #f6ad7b;
+    border-radius: 3px;
+}
+
+main {
+    background-color: rgba(245, 245, 245, 0.322);
+    width: 95vw; 
+    margin: auto; 
+    margin-bottom: 15px;
+    padding: 15px; 
+    border-radius: 3px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.253);
+}
+
+.destaque {
+    background-image: url(imagens/destaque02.jpg);
+    height: 220px;
+    color: #fcfaed;
+    text-align: center;
+
+    background-size: cover; 
+    background-position: center right;
+    background-repeat: no-repeat;      
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+    
+}
+
+.destaque h2 {
+    font-size: 24px;
+    font-family: 'Gafata', sans-serif;
+    text-align: center;
+    color: #fcfaed;  
+    
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+.destaque p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gafata', sans-serif;
+    text-align: center;
+    color: #fcfaed;
+
+    padding-bottom: 120px;
+
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+hr {
+    color:  #e67365;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 10px;
+    text-align: center;    
+    font-size: 18px;
+    font-family:'Nunito', sans-serif;
+    color: #75675E
+}
+
+.redes { 
+    margin: 10px;
+    text-align: center;
+}
+
+.whatsapp, .instagram {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 20px;    
+}
+
+.filme {   
+    text-align: center;      
+}
+
+.filme video {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;   
+}
+
+.catalogo {
+    font-size: 16px;
+    color: #75675E;
+    text-align: center;
+    margin: 10px;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+    gap: 4vw;
+    padding: 0 2vw;
+}
+
+.itens {
+    width: 200px;
+    height: 200px;
+    margin: 0px;     
+}
+
+.itens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.imagens img {
+    transform: scale(0.8);
+    transition: 500ms;
+    box-shadow: rgba(100, 48, 5, 0.13) 0 0 5px 5px;
+}
+
+.imagens img:hover {
+    transform: scale(1.0)    
+}
+
+
+.pedido{
+    height: 180px;
+    width: 180px;
+    margin: auto;
+}
+
+.sobre {
+    height: 213px;
+    width: 320px;    
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.253);
+}
+
+.paragrafo {
+    text-indent: 10%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+#nome, #email,#telefone, #assunto, #mensagem {
+    width: 100%;
+    border: none;
+    height: 30px;
+    box-shadow: #504640 0 0 3px;
+    margin-bottom: 5px;
+}
+
+#mensagem {height: auto;}
+
+button {
+    border:none;
+    background-color: #75675E;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+button:hover, button:focus {
+    background-color: #e67365 ;
+}
+
+
+
+footer {
+    height: 80px;
+    background-color: #504640;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+footer > p {
+    text-align: center;
+    font-size: 12px;
+    color: #fcfaed;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+nav a { font-size: 18px; }
+      
+.destaque { height: 400px; }
+
+.destaque h2 {  font-size: 52px;}
+
+.destaque p { font-size: 32px;
+    margin-bottom: 120px;
+}
+
+h2 { font-size: 22px;}
+    
+.trabalho img {
+    display: inline-block;
+        
+    height: 280px;
+    width: 248px;
+    margin: 20px;
+}
+
+
+.trabalho figure { text-align: center; }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+        background-color: #F7D9C5;  
+    }
+
+
+h1 img {
+    width: 120px;
+    height: 120px;    
+    margin: 10px 0px 10px 5vw;  
+}
+
+nav {
+    margin-right: 5vw;
+}
+
+nav a {    
+    font-size: 18px;
+    padding: 10px;
+    margin: 30px;
+
+}
+
+main {
+    margin-top: 20px
+}
+
+
+.trabalho img {
+    display: inline-block;
+        
+    height: 450px;
+    width: 390px;
+}
+
+.trabalho figure {        
+    text-align: center;
+}
+
+.sobre {
+    height: 326px;
+    width: 540px; 
+}
+    
+}
+
+
+@media screen and (min-width: 1300px){
+
+.destaque { height: 500px; }
+
+.destaque h2 {  font-size: 56px;}
+
+.destaque p {
+    font-size: 38px;
+    margin-bottom: 100px;
+}
+
+h2 { font-size: 32px; }
+
+.trabalho img {     
+            
+    height: 550px;
+    width: 490px;
+}
+    
+.itens {
+        width: 280px;
+        height: 280px;     
+}
+
+.sobre {
+    height: 326px;
+    width: 540px; 
+}
+
+form { width: 80%; }
+
+}
+
+    
+
+
+ 
